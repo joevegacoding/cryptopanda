@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap");
 :root {
   --text-primary: #000;
   --bgPrimary: #fff;
@@ -15,13 +18,13 @@ a:hover {
   color: var(--pink) !important;
 }
 .app {
-  display: flex;
-  overflow: hidden;
+  padding: 15px;
 }
 .navbar {
   flex: 0.2;
   background-color: rgb(0, 21, 41);
 }
+
 .main {
   flex: 0.8;
   width: 100%;
@@ -37,18 +40,32 @@ a:hover {
   margin: 0px;
   background-color: rgb(0, 21, 41);
 }
+
+.nav-menu {
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+}
 .logo-container {
-  background-color: #001529;
   display: flex;
-  padding: 20px;
+  /* padding: 20px; */
   align-items: center;
+  justify-content: center;
   width: 100%;
 }
 .logo {
   margin: 0 0 0 15px;
+  font-size: 1.8rem;
 }
 .logo a {
   color: white;
+}
+
+.logo-name {
+  color: #fff;
+  font-family: "DM Sans", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
 }
 .menu-control-container {
   display: none !important;

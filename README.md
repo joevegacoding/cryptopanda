@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# CryptoPanda 🪙🐼
+CryptoPanda is a cryptocurrency web app that allows you to search different cryptocurrencies and analyze data such as the market cap, the price and the volume. You can also search for a cryptocurrency and explore recent news about a specific coin.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Installation
 
-## Available Scripts
+You might need to install the necessart packages by running:
+### `npm install` 
 
-In the project directory, you can run:
-
+To start the project, run:
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The command will run it in the development mode.\
+Open [http://localhost:3000/home](http://localhost:3000/home) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Technologies
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This project was created with [Create React App](https://github.com/facebook/create-react-app). Here are some of the packages used to make this project:
 
-### `npm run build`
+- [Millify]( https://github.com/izolate/millify): A package that converts long numbers into human-readable strings.
+- [Moment]( https://momentjs.com): Moment was used to parse and display how long ago(in hours) an article was posted in the News section.
+- [HTML-Parser]( https://github.com/peternewnham/react-html-parser): It parses an HTML block of code into readable text. It was used to parse the cryptocurrency details.
+- [Ant Design](https://ant.design): Ant Design is a library that contains a set of components that helped building the UI and UX of this project.
+- [Redux Toolkit](https://redux-toolkit.js.org): Redux Toolkit is the simpler version of Redux. It help with states management and it's what made fetching and manipulating data easier in this project.
+- [Chart.js](https://www.chartjs.org): Char.js is a package containing a set of components displaying different kinds of charts. It was used in the coin's details page to display the market's info.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## APIs
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+RapidApi was used to fetch the data in this app and it was made possible thanks to:
 
-### `npm run eject`
+- [Coinranking](https://rapidapi.com/Coinranking/api/coinranking1): This api is where most of the data are coming from.
+- [Bing News Search]( https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1/): The Bing News Search API is what's populating the News section.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Screenshots
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Screenshot 1 |
+:-------------------------:|
+![](https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%201.png?raw=true) ![]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Screenshot 2 |
+:-------------------------:|
+![](https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%202.png?raw=true) 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Screenshot 3 |
+:-------------------------:|
+![](https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%203.png?raw=true)
 
-## Learn More
+Screenshot 4 |
+:-------------------------:|
+![](https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%204.png?raw=true) 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

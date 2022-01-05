@@ -28,7 +28,9 @@ const Cryptocurrencies = ({ simplified }) => {
     <>
       {!simplified && (
         <div className="search-crypto">
-          <Input
+          <input
+            allowClear={true}
+            className="search-crypto-input"
             placeholder="Search Cryptocurrency"
             onChange={(e) => setSearchTerm(e.target.value)}
           />
@@ -46,6 +48,7 @@ const Cryptocurrencies = ({ simplified }) => {
           >
             <Link key={currency.uuid} to={`/crypto/${currency.uuid}`}>
               <Card
+                bordered={false}
                 title={`${currency.rank}. ${currency.name}`}
                 extra={<img className="crypto-image" src={currency.iconUrl} />}
                 hoverable

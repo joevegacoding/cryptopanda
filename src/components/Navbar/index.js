@@ -16,11 +16,11 @@ const Navbar = () => {
   return (
     <>
       <Nav>
-        <NavLink to="/">
+        <NavLink to="/home">
           <div className="logo-container">
             <Avatar src={icon} size="large" />
             <h1 className="logo">
-              <Link className="logo-name" to="/">
+              <Link className="logo-name" to="/home">
                 Crypto Panda
               </Link>
               {/* <Button className="menu-control-container">
@@ -31,15 +31,13 @@ const Navbar = () => {
         </NavLink>
         <Bars />
         <NavMenu className="nav-menu">
-          <NavLink activeStyle to="/">
+          <NavLink activeStyle to="/home">
             Home
           </NavLink>
           <NavLink activeStyle to="/cryptocurrencies">
             Cryptocurrencies
           </NavLink>
-          {/* <NavLink activeStyle to="/exchanges">
-            Exchanges
-          </NavLink> */}
+
           <NavLink activeStyle to="/news">
             News
           </NavLink>

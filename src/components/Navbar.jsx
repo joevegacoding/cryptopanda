@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="logo-container">
         <Avatar src={icon} size="large" />
         <Typography.Title level={2} className="logo">
-          <Link to="/">Crypto Panda</Link>
+          <Link to="/home">Crypto Panda</Link>
           {/* <Button className="menu-control-container">
 
           </Button> */}
@@ -24,14 +24,12 @@ const Navbar = () => {
       </div>
       <Menu theme="dark">
         <Menu.Item icon={<HomeOutlined />}>
-          <Link to="/">Home</Link>
+          <Link to="/home">Home</Link>
         </Menu.Item>
         <Menu.Item icon={<FundOutlined />}>
           <Link to="/cryptocurrencies">Cryptocurrencies</Link>
         </Menu.Item>
-        <Menu.Item icon={<MoneyCollectOutlined />}>
-          <Link to="/exchanges">Exchanges</Link>
-        </Menu.Item>
+
         <Menu.Item icon={<BulbOutlined />}>
           <Link to="/news">News</Link>
         </Menu.Item>

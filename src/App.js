@@ -1,37 +1,14 @@
 import logo from "./logo.svg";
 import { Switch, Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
-import {
-  Exchanges,
-  Homepage,
-  Cryptocurrencies,
-  News,
-  CryptoDetails,
-} from "./components";
+import { Homepage, Cryptocurrencies, News, CryptoDetails } from "./components";
 import Navbar from "./components/Navbar/index";
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
-{
-  /* <Navbar />
-<Switch>
-  <Route exact path="/">
-    <Homepage />
-  </Route>
-  <Route exact path="/exchanges">
-    <Exchanges />
-  </Route>
-  <Route exact path="/cryptocurrencies">
-    <Cryptocurrencies />
-  </Route>
-  <Route exact path="/crypto/:coinId">
-    <CryptoDetails />
-  </Route>
-  <Route exact path="/news">
-    <News />
-  </Route>
-</Switch> */
-}
+
 function App() {
+  const date = new Date().getFullYear();
+  console.log(date);
   return (
     <Router>
       <Navbar />
@@ -39,12 +16,10 @@ function App() {
       <Layout>
         <div className="routes">
           <Switch>
-            <Route exact path="/">
+            <Route exact path="/home">
               <Homepage />
             </Route>
-            <Route exact path="/exchanges">
-              <Exchanges />
-            </Route>
+
             <Route exact path="/cryptocurrencies">
               <Cryptocurrencies />
             </Route>
@@ -62,14 +37,34 @@ function App() {
           level={5}
           style={{ color: "white", textAlign: "center" }}
         >
-          Copyright © 2021
-          <Link to="/">Cryptoverse Inc.</Link> <br />
+          Copyright ©{date}
+          <Link to="/home"> Cryptoverse Inc.</Link> <br />
           All Rights Reserved.
         </Typography.Title>
         <Space>
-          <Link to="/">Home</Link>
-          <Link to="/exchanges">Exchanges</Link>
-          <Link to="/news">News</Link>
+          <Link to="/home">
+            <h2
+              style={{
+                color: "#fff",
+                fontWeight: "bold",
+                textDecoration: "underline",
+              }}
+            >
+              Home
+            </h2>
+          </Link>
+
+          <Link to="/news">
+            <h2
+              style={{
+                color: "#fff",
+                fontWeight: "bold",
+                textDecoration: "underline",
+              }}
+            >
+              News
+            </h2>
+          </Link>
         </Space>
       </div>
     </Router>

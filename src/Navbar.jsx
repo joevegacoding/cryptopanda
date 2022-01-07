@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Button, Menu, Typography, Avatar } from "antd";
 import { Link } from "react-router-dom";
 import {
@@ -16,7 +16,7 @@ const Navbar = () => {
       <div className="logo-container">
         <Avatar src={icon} size="large" />
         <Typography.Title level={2} className="logo">
-          <Link to="/home">Crypto Panda</Link>
+          <Link to="/">Crypto Panda</Link>
           {/* <Button className="menu-control-container">
 
           </Button> */}
@@ -24,7 +24,7 @@ const Navbar = () => {
       </div>
       <Menu theme="dark">
         <Menu.Item icon={<HomeOutlined />}>
-          <Link to="/home">Home</Link>
+          <Link to="/">Home</Link>
         </Menu.Item>
         <Menu.Item icon={<FundOutlined />}>
           <Link to="/cryptocurrencies">Cryptocurrencies</Link>

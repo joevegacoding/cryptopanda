@@ -2,21 +2,27 @@ import logo from "./logo.svg";
 import { Switch, Route, Link } from "react-router-dom";
 import { Layout, Typography, Space } from "antd";
 import { Homepage, Cryptocurrencies, News, CryptoDetails } from "./components";
-import Navbar from "./components/Navbar/index";
+import Navbar from "./components/Navbar";
 import "./App.css";
+import React, { useState } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => {
+    setIsOpen(!isOpen);
+  };
+
   const date = new Date().getFullYear();
   console.log(date);
   return (
     <Router>
-      <Navbar />
+      <Navbar isOpen={isOpen} toggle={toggle} />
 
       <Layout>
         <div className="routes">
           <Switch>
-            <Route exact path="/home">
+            <Route exact path="/">
               <Homepage />
             </Route>
 
@@ -38,11 +44,11 @@ function App() {
           style={{ color: "white", textAlign: "center" }}
         >
           Copyright ©{date}
-          <Link to="/home"> Cryptoverse Inc.</Link> <br />
+          <Link to="/"> Cryptoverse Inc.</Link> <br />
           All Rights Reserved.
         </Typography.Title>
         <Space>
-          <Link to="/home">
+          <Link to="/">
             <h2
               style={{
                 color: "#fff",

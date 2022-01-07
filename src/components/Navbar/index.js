@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // import { NavLink } from "react-router-dom";
 import { Avatar, Typography } from "antd";
 import { Link } from "react-router-dom";
@@ -11,16 +11,20 @@ import {
   Bars,
 } from "./NavbarElement";
 import icon from "../../images/logo.png";
+import Container from "@mui/material/Container";
+
+import NavDropdown from "react-bootstrap/NavDropdown";
 
 const Navbar = () => {
+  const [show, setShow] = useState(false);
   return (
     <>
       <Nav>
-        <NavLink to="/home">
+        <NavLink to="/">
           <div className="logo-container">
             <Avatar src={icon} size="large" />
             <h1 className="logo">
-              <Link className="logo-name" to="/home">
+              <Link className="logo-name" to="/">
                 Crypto Panda
               </Link>
               {/* <Button className="menu-control-container">
@@ -29,9 +33,9 @@ const Navbar = () => {
             </h1>
           </div>
         </NavLink>
-        <Bars />
+        <Bars onClick={() => setShow(!show)} />
         <NavMenu className="nav-menu">
-          <NavLink activeStyle to="/home">
+          <NavLink activeStyle to="/">
             Home
           </NavLink>
           <NavLink activeStyle to="/cryptocurrencies">

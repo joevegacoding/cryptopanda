@@ -27,13 +27,10 @@ const Navbar = () => {
               <Link className="logo-name" to="/">
                 Crypto Panda
               </Link>
-              {/* <Button className="menu-control-container">
-
-          </Button> */}
             </h1>
           </div>
         </NavLink>
-        <Bars onClick={() => setShow(!show)} />
+
         <NavMenu className="nav-menu">
           <NavLink activeStyle to="/">
             Home
@@ -46,9 +43,6 @@ const Navbar = () => {
             News
           </NavLink>
         </NavMenu>
-        {/* <NavBtn>
-          <NavBtnLink to="/signin">Sign Up</NavBtnLink>
-        </NavBtn> */}
       </Nav>
     </>
   );

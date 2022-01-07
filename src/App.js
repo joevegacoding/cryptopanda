@@ -74,13 +74,6 @@ function App() {
         </Space>
       </div>
     </Router>
-
-    // <div className="app">
-    //   <div className="navbar">
-    //     <Navbar />
-    //   </div>
-
-    // </div>
   );
 }
 

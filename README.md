@@ -36,3 +36,12 @@ RapidApi was used to fetch the data in this app and it was made possible thanks 
 - [Bing News Search](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1/): The Bing News Search API is what's populating the News section.
 
 ## Screenshots
+
+<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%201.png" alt="drawing" width="1000 " />  
+
+<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%202.png" alt="drawing" width="1000"/>  
+
+<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%203.png" alt="drawing" width="1000" />
+
+<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%204.png" alt="drawing" width="1000" />  
+

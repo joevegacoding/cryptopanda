@@ -19,7 +19,9 @@ Open [http://localhost:3000/](http://localhost:3000/) to view it in your browser
 
 ## Technologies
 
-This project was created with [Create React App](https://github.com/facebook/create-react-app). Here are some of the packages used to make this project:
+This project was created with [Create React App](https://reactjs.org).
+
+Here are some of the packages used to create this project:
 
 - [Millify](https://github.com/izolate/millify): A package that converts long numbers into human-readable strings.
 - [Moment](https://momentjs.com): Moment was used to parse and display how long ago(in hours) an article was posted in the News section.

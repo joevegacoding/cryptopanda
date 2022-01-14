@@ -6,7 +6,7 @@ CryptoPanda is a cryptocurrency web app that allows you to search different cryp
 
 ## Installation
 
-You might need to install the necessart packages by running:
+You might need to install the necessary packages by running:
 
 ### `npm install`
 

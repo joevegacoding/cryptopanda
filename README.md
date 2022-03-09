@@ -39,11 +39,8 @@ RapidApi was used to fetch the data in this app and it was made possible thanks 
 
 ## Screenshots
 
-<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%201.png" alt="drawing" width="1000 " />  
+Desktip View             |  MobileView
+:-------------------------:|:-------------------------:
+![](https://github.com/joevegacoding/cryptopanda/blob/main/Screenshots/desktop.png)  |  ![](https://github.com/joevegacoding/cryptopanda/blob/main/Screenshots/mobile.png)
 
-<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%202.png" alt="drawing" width="1000"/>  
-
-<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%203.png" alt="drawing" width="1000" />
-
-<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%204.png" alt="drawing" width="1000" />  
 

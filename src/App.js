@@ -44,7 +44,7 @@ function App() {
           style={{ color: "white", textAlign: "center" }}
         >
           Copyright ©{date}
-          <Link to="/"> Cryptoverse Inc.</Link> <br />
+          <Link to="/"> Crypto Panda</Link> <br />
           All Rights Reserved.
         </Typography.Title>
         <Space>
@@ -53,10 +53,21 @@ function App() {
               style={{
                 color: "#fff",
                 fontWeight: "bold",
-                textDecoration: "underline",
+                textDecoration: "none",
               }}
             >
               Home
+            </h2>
+          </Link>
+          <Link to="/cryptocurrencies">
+            <h2
+              style={{
+                color: "#fff",
+                fontWeight: "bold",
+                textDecoration: "none",
+              }}
+            >
+              Cryptocurrencies
             </h2>
           </Link>
 
@@ -65,7 +76,7 @@ function App() {
               style={{
                 color: "#fff",
                 fontWeight: "bold",
-                textDecoration: "underline",
+                textDecoration: "none",
               }}
             >
               News

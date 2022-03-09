@@ -9,10 +9,20 @@
   --light-blue: #e6f7ff;
   --border: #d9d9d9;
 }
+
+
+
+.heading {
+ 
+
+
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--bgPrimary);
+  background-color: var(--text-primary);
 }
 a:hover {
   color: var(--pink) !important;
@@ -22,7 +32,9 @@ a:hover {
 }
 .navbar {
   flex: 0.2;
-  background-color: rgb(0, 21, 41);
+  /* background-color: rgb(0, 21, 41);
+  backgrou */
+  
 }
 
 .main {
@@ -38,7 +50,7 @@ a:hover {
   margin: 10px;
   height: 100vh;
   margin: 0px;
-  background-color: rgb(0, 21, 41);
+
 }
 
 .nav-menu {
@@ -134,8 +146,13 @@ a:hover {
 }
 .coin-detail-container {
   margin: 30px;
+
+
 }
+
+
 .coin-heading-container {
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,13 +277,21 @@ a:hover {
 @media screen and (max-width: 500px) {
   .heading {
     margin-top: 20px;
+
+
   }
 }
 .select-news {
   width: 180px;
 }
+
+
+
+
+
 .news-card {
   min-height: 300px !important;
+  
 }
 .news-image-container {
   display: flex !important;
@@ -289,6 +314,7 @@ a:hover {
 }
 .provider-name {
   margin-left: 10px;
+
 }
 .chart-header {
   display: flex;
@@ -327,7 +353,7 @@ a:hover {
 .search-crypto {
   font-family: "Montserrat", sans-serif;
   margin: 20px auto 30px auto;
-
+  color: white;
   width: 350px;
 }
 
@@ -335,17 +361,26 @@ a:hover {
   width: 100%;
   padding: 8px 15px;
   border-radius: 15px;
-  border: 0.5px solid #18466455;
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
   outline: none;
+  color: white;
+  background-color: rgb(48, 48, 48);
 }
 .crypto-card-container {
   min-height: 65vh !important;
+  
 }
 .crypto-card {
   min-width: 250px;
+  background-color: #000;
+
+
 }
+
+
 .crypto-card .crypto-image {
   width: 35px;
+
 }
 .select-timeperiod {
   width: 200px !important;
@@ -353,11 +388,53 @@ a:hover {
 }
 .footer {
   font-family: "Montserrat", sans-serif;
-  background-color: #001529;
+  background-color: #000;
   display: flex;
   flex-direction: row;
-
+border-top: 1px solid rgba(255, 255, 255, 0.5);
   justify-content: space-between;
   padding: 25px;
   align-items: center;
+}
+
+.footer h2 {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+  flex-direction: column;
+  }
+  .footer h2 {
+    font-size: 15px;
+  }
+}
+
+
+
+.single-card-info {
+  background-color: black;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+
+ .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+   background-color: #000 !important;
+   color: #fff !important;
+ }
+
+.ant-select-item-option-content {
+  background-color: #000 !important;
+
+}
+.ant-select-item.ant-select-item-option:hover {
+  background-color: #000 !important;
+}
+
+.ant-select-dropdown.ant-select-dropdown-hidden {
+  background-color: #000 !important;
+
+}
+.ant-select-selection-placeholder::after {
+  color: white !important;
 }

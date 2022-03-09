@@ -15,33 +15,39 @@ const Homepage = () => {
   if (isFetching) return "Loading...";
   return (
     <>
-      <Title level={2} className="heading">
-        Global Crypto Stats
+      <Title style={{color: "#fff" }} level={2} className="heading">
+        Crypto Stats
       </Title>
       <Row>
-        <Col span={12}>
-          <Statistic title="Total Cryptocurrencies" value={globalStats.total} />
+        <Col   span={12}>
+          <Statistic  title={<h4 style={{color: "rgba(255, 255, 255, 0.7)", marginTop: "15px"}}>Total Cryptocurrencies</h4>}  value={globalStats.total} />
         </Col>
         <Col span={12}>
           <Statistic
-            title="Total Exchanges"
+         title={<h4 style={{color: "rgba(255, 255, 255, 0.7)", marginTop: "15px"}}>Total Exchanges</h4>} 
+
             value={millify(globalStats.totalExchanges)}
           />
         </Col>
         <Col span={12}>
           <Statistic
-            title="Total Market Cap"
+
+              title={<h4 style={{color: "rgba(255, 255, 255, 0.7)", marginTop: "15px"}}>Total Market Cap</h4>} 
+
             value={millify(globalStats.totalMarketCap)}
           />
         </Col>
         <Col span={12}>
           <Statistic
-            title="Total 24h Volume"
+          
+          title={<h4 style={{color: "rgba(255, 255, 255, 0.7)", marginTop: "15px"}}>Total Volume 24h</h4>} 
             value={millify(globalStats.total24hVolume)}
           />
         </Col>
         <Col span={12}>
           <Statistic
+             
+
             title="Total Markets"
             value={millify(globalStats.totalMarkets)}
           />

@@ -3,7 +3,7 @@ import { Select, Typography, Row, Col, Avatar, Card } from "antd";
 import moment from "moment";
 import { useGetCryptoNewsQuery } from "../services/cryptoNewsApi";
 import { useGetCryptosQuery } from "../services/cryptoApi";
-
+import "../App.css"
 const { Text, Title } = Typography;
 const { Option } = Select;
 const demoImageUrl =
@@ -22,8 +22,9 @@ const News = ({ simplified }) => {
   return (
     <Row gutter={[24, 24]}>
       {!simplified && (
-        <Col span={24}>
+        <Col  span={24}>
           <Select
+         
             showSearch
             className="select-news"
             placeholder="Select A Crypto"
@@ -33,7 +34,9 @@ const News = ({ simplified }) => {
               option.children.toLowerCase().indexOf(input.toLowerCase()) >= 0
             }
           >
-            <Option value="Cryptocurrency">Cryptocurrency</Option>
+            <Option 
+
+            value="Cryptocurrency">Cryptocurrency</Option>
             {data?.data?.coins.map((coin) => (
               <Option value={coin.name}>{coin.name}</Option>
             ))}
@@ -42,10 +45,10 @@ const News = ({ simplified }) => {
       )}
       {cryptoNews.value.map((news, i) => (
         <Col xw={24} sm={12} lg={8} key={i}>
-          <Card hoverable className="news-card">
+          <Card  style={{background: "#000",border: "1px solid rgba(255, 255, 255, 0.4)"}}  hoverable className="news-card">
             <a href={news.url} target="blank" rel="noreferrer">
-              <div className="news-image-container">
-                <Title className="news-title" level={4}>
+              <div  className="news-image-container">
+                <Title style={{color: "white"}} className="news-title" level={4}>
                   {news.name}
                 </Title>
                 <img
@@ -57,7 +60,7 @@ const News = ({ simplified }) => {
                   src={news?.image?.thumbnail?.contentUrl || demoImageUrl}
                 />
               </div>
-              <p>
+              <p style={{color: "white"}}>
                 {news.description > 100
                   ? `${news.description.substring(0, 100)}... `
                   : news.description}
@@ -69,8 +72,8 @@ const News = ({ simplified }) => {
                     demoImageUrl
                   }
                 />
-                <Text className="provider-name">{news.provider[0]?.name}</Text>
-                <Text>
+                <Text style={{color: "white", fontWeight: "bold"}} className="provider-name">{news.provider[0]?.name}</Text>
+                <Text style={{color: "white"}}>
                   {moment(news.datePublished).startOf("ss").fromNow()}
                 </Text>
               </div>

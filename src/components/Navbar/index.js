@@ -19,7 +19,7 @@ const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
     <>
-      <Nav>
+      <Nav >
         <NavLink to="/">
           <div className="logo-container">
             <Avatar src={icon} size="large" />

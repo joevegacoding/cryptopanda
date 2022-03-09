@@ -181,7 +181,7 @@ a:hover {
   font-weight: 700;
   font-size: 1.4rem;
   margin-top: 20px;
-  color: var(--pink);
+
 }
 .coin-details-heading {
   font-weight: 700 !important;
@@ -195,6 +195,16 @@ a:hover {
   font-size: 1rem;
   opacity: 0.9;
   padding: 20px;
+}
+.ant-typography, span {
+  color: white !important;
+}
+.ant-row.coin-link:hover {
+  background-color: #000 !important;
+}
+.ant-col.coin-stats:hover {
+  background-color: #000 !important;
+
 }
 .coin-stats-name {
   display: flex;

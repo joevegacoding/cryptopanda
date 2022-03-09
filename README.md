@@ -2,9 +2,11 @@
 
 CryptoPanda is a cryptocurrency web app that allows you to search different cryptocurrencies and analyze data such as the market cap, the price and the volume. You can also search for a cryptocurrency and explore recent news about a specific coin.
 
+## 🚀  [Live View](https://heuristic-hermann-e7b638.netlify.app/)
+
 ## Installation
 
-You might need to install the necessart packages by running:
+You might need to install the necessary packages by running:
 
 ### `npm install`
 
@@ -17,7 +19,9 @@ Open [http://localhost:3000/](http://localhost:3000/) to view it in your browser
 
 ## Technologies
 
-This project was created with [Create React App](https://github.com/facebook/create-react-app). Here are some of the packages used to make this project:
+This project was created with [Create React App](https://reactjs.org).
+
+Here are some of the packages used to create this project:
 
 - [Millify](https://github.com/izolate/millify): A package that converts long numbers into human-readable strings.
 - [Moment](https://momentjs.com): Moment was used to parse and display how long ago(in hours) an article was posted in the News section.
@@ -34,3 +38,12 @@ RapidApi was used to fetch the data in this app and it was made possible thanks 
 - [Bing News Search](https://rapidapi.com/microsoft-azure-org-microsoft-cognitive-services/api/bing-news-search1/): The Bing News Search API is what's populating the News section.
 
 ## Screenshots
+
+<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%201.png" alt="drawing" width="1000 " />  
+
+<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%202.png" alt="drawing" width="1000"/>  
+
+<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%203.png" alt="drawing" width="1000" />
+
+<img src="https://github.com/joevegacoding/cryptopanda/blob/main/Images/Screen%20Shot%204.png" alt="drawing" width="1000" />  
+

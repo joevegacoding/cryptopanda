@@ -2,7 +2,7 @@
 
 CryptoPanda is a cryptocurrency web app that allows you to search different cryptocurrencies and analyze data such as the market cap, the price and the volume. You can also search for a cryptocurrency and explore recent news about a specific coin.
 
-## 🚀  [Live View](https://heuristic-hermann-e7b638.netlify.app/)
+## 🚀  [Live View](https://mystifying-perlman-fbd480.netlify.app/)
 
 ## Installation
 

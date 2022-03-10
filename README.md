@@ -39,7 +39,7 @@ RapidApi was used to fetch the data in this app and it was made possible thanks 
 
 ## Screenshots
 
-Desktop View             |  MobileView
+Desktop View             |  Mobile View
 :-------------------------:|:-------------------------:
 ![](https://github.com/joevegacoding/cryptopanda/blob/main/Screenshots/desktop.png)  |  ![](https://github.com/joevegacoding/cryptopanda/blob/main/Screenshots/mobile.png)
 
